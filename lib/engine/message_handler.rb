@@ -1,4 +1,3 @@
-require 'json'
 module Connect4
   class MessageHandler
     def game
@@ -6,16 +5,7 @@ module Connect4
     end
     
     def handle(message)
-      puts message.inspect
-      message = JSON.parse(message)
-      if message["action"] == "subscribe"
-        subscribe(message["user"])
-      end
+      # do something
     end
-    
-    private
-      def subscribe(user)
-        puts "Added #{user}"
-      end
   end
 end
