@@ -1,2 +1,5 @@
-require 'engine/base'
-require 'engine/message_handler'
+require 'lib/engine/base'
+require 'lib/models/board'
+require 'lib/models/game'
+require 'lib/models/player'
+require 'lib/engine/message_handler'
